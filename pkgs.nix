@@ -143,7 +143,6 @@
     fira-code
     fira-code-symbols
     hack-font
-    symbola
     jetbrains-mono
     nerdfonts
   ];
