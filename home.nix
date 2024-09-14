@@ -16,8 +16,8 @@
   ];
 
   home = {
-    username = "khoa";
-    homeDirectory = "/home/khoa";
+    username = "ched54";
+    homeDirectory = "/home/ched54";
   };
 
   # Add stuff for your user as you see fit:
@@ -29,8 +29,8 @@
     home-manager.enable = true;
     git = {
      enable = true;
-     userName = "dxcently";
-     userEmail = "dxcently@gmail.com";
+     userName = "typosbro";
+     userEmail = "typosbro@protone.me";
       };
      };
 

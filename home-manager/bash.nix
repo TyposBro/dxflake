@@ -20,12 +20,12 @@ in
       fi
     '' ; */
     sessionVariables = {
-      khoa = true;
+      ched54 = true;
     };
     shellAliases = {
       sv="sudo nvim";
-      flake-rebuild="nh os switch /home/khoa/dxflake/";
-      flake-update="nah os switch /home/khoa/dxflake/ --update";
+      flake-rebuild="nh os switch /home/ched54/dxflake/";
+      flake-update="nah os switch /home/ched54/dxflake/ --update";
       gcCleanup="nh clean all";
       v="nvim";
       ls="lsd";

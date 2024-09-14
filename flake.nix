@@ -24,9 +24,9 @@
 
     # User Variables
     hostname = "nixos";
-    username = "khoa";
-    gitUsername = "dxcently";
-    gitEmail = "dxcently@gmail.com";
+    username = "ced54";
+    gitUsername = "typosbro";
+    gitEmail = "typosbro@proton.me";
     theme = "rose-pine";
 
     pkgs = import nixpkgs {

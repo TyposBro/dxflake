@@ -13,7 +13,6 @@
   grim
   swappy
   bash
-  thunderbird
   wpgtk
   wl-clipboard
   wlogout
@@ -35,8 +34,8 @@
   vesktop
   udiskie
   virt-manager
-  ungoogled-chromium
-  firefox-bin
+  chromium
+  firefox
   wine
   ncspot
   lutris
@@ -90,6 +89,28 @@
   nodejs
   pkg-config
   v4l-utils
+  # personal
+   vscode
+   gnome3.gnome-tweaks
+   zsh
+   oh-my-zsh
+   spotify
+   android-studio
+   bun
+   protonvpn-gui
+   galaxy-buds-client
+   easyeffects
+   variety
+   xorg.xrandr
+   busybox  
+   openjdk11
+   github-desktop
+   openssl
+   android-tools   
+   qbittorrent
+   telegram-desktop
+   discord
+   rhythmbox
   ];
 
   #nix options pkgs

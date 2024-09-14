@@ -62,7 +62,7 @@
 
   #managing users
   users.users = {
-    khoa = {
+    ched54 = {
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
         # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
@@ -124,7 +124,7 @@
       openFirewall = true;
     };
     xserver = {
-      displayManager.autoLogin.user = "khoa"; 
+      displayManager.autoLogin.user = "ched54"; 
       displayManager.autoLogin.enable = true;
     };
   };
@@ -163,21 +163,36 @@
   
   #time stuff
   time = {
-  timeZone = "America/New_York";
+  timeZone = "Asia/Seoul";
   };
+
+   # Select internationalisation properties.
   i18n = {
   defaultLocale = "en_US.UTF-8";
   extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
+   LC_ADDRESS = "ko_KR.UTF-8";
+    LC_IDENTIFICATION = "ko_KR.UTF-8";
+    LC_MEASUREMENT = "ko_KR.UTF-8";
+    LC_MONETARY = "ko_KR.UTF-8";
+    LC_NAME = "ko_KR.UTF-8";
+    LC_NUMERIC = "ko_KR.UTF-8";
+    LC_PAPER = "ko_KR.UTF-8";
+    LC_TELEPHONE = "ko_KR.UTF-8";
+    LC_TIME = "ko_KR.UTF-8";
    };
+# Enable input method support
+   inputMethod = {
+    enabled = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      fcitx5-hangul
+      fcitx5-gtk
+    ];
+  };
+   # Add Korean to your locale settings
+  supportedLocales = [
+    "en_US.UTF-8/UTF-8"
+    "ko_KR.UTF-8/UTF-8"
+  ];
   };
 
   #environment (REMEMBER THE "N" in enviroNment)
@@ -197,7 +212,7 @@
    polkit.enable = true;
    rtkit.enable = true;
    sudo.extraConfig = ''
-    khoa ALL=(ALL) NOPASSWD: /bin/bash -c 'yy'
+    ched54 ALL=(ALL) NOPASSWD: /bin/bash -c 'yy'
    '';
   };
   xdg.portal = {
