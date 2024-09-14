@@ -24,7 +24,7 @@
 
     # User Variables
     hostname = "nixos";
-    username = "ced54";
+    username = "ched54";
     gitUsername = "typosbro";
     gitEmail = "typosbro@proton.me";
     theme = "rose-pine";
