@@ -6,6 +6,13 @@
     ./pkgs.nix
   ];
 
+  # Create a Swap
+
+  swapDevices = [{
+      device = "/swapfile";
+      size = 16 * 1024; # 16GB
+   }];
+
   nixpkgs = {
     overlays = [
     /* (self: super: (let
